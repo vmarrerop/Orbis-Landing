@@ -16,22 +16,22 @@ export default function Home() {
 
   return (
     <>
-      <main className="h-full bg-black relative">
-        <div className="world w-full">
-          <div className="world2 transform-gpu md:-translate-x lg:-translate-x-1/4 xl:-translate-x-1/5">
-            <Scene />
-          </div>
+      <main className="h-full relative" style={{ marginLeft: -150, }}>
+        <div className="world2">
+            <Scene  /> {/* Ajusta el margen izquierdo de la escena según sea necesario */}
         </div>
-        <div className="info-panel right-12 md:right-0">
+
+        <div className='bg-blue-200 info' style={{ position: "fixed", bottom: 250, right: 0, zIndex: 2 }}>
           {/* Conditional rendering to toggle between titles */}
           {!showMessage ? (
-            <h1 className="main-title text-2xl md:text-4xl lg:text-4xl xl:text-7xl">ORBIS GEOSCRIPTING | ACADEMIA</h1>
+            <h1 className="main-title text-xl md:text-4xl lg:text-4xl xl:text-7xl">ORBIS GEOSCRIPTING | ACADEMIA</h1>
           ) : (
             <h1 className="main-title text-2xl md:text-4xl lg:text-4xl xl:text-7xl">ESPÉRANOS PRONTO...</h1>
           )}
-          <button className="conoce mt-4 px-4 py-2 text-white rounded" onClick={toggleMessage}>CONOCE MÁS</button>
+          <button className="mt-4 px-4 py-2 text-white rounded conoce" onClick={toggleMessage}>CONOCE MÁS</button>
           <Image className="image-orbis" src={image} alt="Orbis Logo" width={400} height={300} />
         </div>
+        
       </main>
     </>
   );

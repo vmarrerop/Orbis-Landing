@@ -14,10 +14,10 @@ export default function Scene() {
   return (
     <Canvas gl={{ antialias: true }} dpr={[1, 3]} className="relative h-svh">
       <ambientLight intensity={0.1} />
-      <directionalLight position={[1, 3, 2]} intensity={1} color="#5555ff" />
-      <pointLight position={[0, -3, 5]} intensity={2} color="#ffddaa" />
-      <pointLight position={[2, 1, 5]} intensity={2} color="#ffddaa" />
-      <pointLight position={[-3, 1, 5]} intensity={2} color="#ffddaa" />
+      <directionalLight position={[1, 3, 5]} intensity={1} color="#5555ff" />
+      <pointLight position={[0, -3, 5]} intensity={50} color="#ffddaa" />
+      <pointLight position={[2, 1, 5]} intensity={80} color="#ffddaa" />
+      <pointLight position={[-3, 1, 5]} intensity={10} color="#ffddaa" />
       <Suspense fallback={<Loader />}>
         <Model />
         <OrbitControls minPolarAngle={Math.PI / 4} maxPolarAngle={Math.PI / 2} minDistance={5} maxDistance={20} />

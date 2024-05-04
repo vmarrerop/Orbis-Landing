@@ -17,7 +17,7 @@ export default function Model(props) {
   return (
     <group ref={group} {...props} dispose={null}>
       <group name="Sketchfab_Scene">
-        <group name="Sketchfab_model" rotation={[-Math.PI / 1.7, 0, 0.98]} scale={0.0068}>
+        <group name="Sketchfab_model" rotation={[-Math.PI / 1.7, 0, 0.98]} scale={0.0038}>
           <group name="Earth_animationfbx" rotation={[Math.PI / 2, 0, 0]}>
             <group name="Object_2">
               <group name="RootNode">
