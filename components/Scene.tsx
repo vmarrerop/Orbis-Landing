@@ -14,7 +14,11 @@ export default function Scene() {
   return (
     <Canvas gl={{ antialias: true }} dpr={[1, 3]} className="relative h-svh">
       <ambientLight intensity={0.1} />
+<<<<<<< HEAD
       <directionalLight position={[1, 3, 5]} intensity={1} color="#5555ff" />
+=======
+      <directionalLight position={[1, 3, 2]} intensity={1} color="#5555ff" />
+>>>>>>> a9fa179bd0bb1f1ebe37faf169aab9519b11ffb3
       <pointLight position={[0, -3, 5]} intensity={50} color="#ffddaa" />
       <pointLight position={[2, 1, 5]} intensity={80} color="#ffddaa" />
       <pointLight position={[-3, 1, 5]} intensity={10} color="#ffddaa" />
