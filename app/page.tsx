@@ -16,7 +16,7 @@ export default function Home() {
 
   return (
     <>
-      <main className="h-full relative" style={{ marginLeft: -150, }}>
+      <main className="relative" style={{ marginLeft: -150, }}>
         <div className="world2">
             <Scene  /> {/* Ajusta el margen izquierdo de la escena según sea necesario */}
         </div>
