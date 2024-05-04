@@ -1,0 +1,21 @@
+.model-container {
+    width: 100%; /* Ancho del contenedor */
+    height: 100%; /* Altura del contenedor */
+    max-width: 500px; /* Ancho máximo del contenedor */
+    max-height: 500px; /* Altura máxima del contenedor */
+    transform: scale(0.8); /* Escala inicial del modelo */
+  }
+  
+  /* Media queries para ajustar la escala en diferentes tamaños de pantalla */
+  @media (min-width: 768px) {
+    .model-container {
+      transform: scale(1); /* Escala para pantallas más grandes */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .model-container {
+      transform: scale(1.2); /* Escala para pantallas aún más grandes */
+    }
+  }
+  

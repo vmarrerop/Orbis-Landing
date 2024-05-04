@@ -17,11 +17,11 @@ export default function Home() {
   return (
     <>
       <main className="relative" style={{ marginLeft: -150, }}>
-        <div className="world2">
+        <div className="world2 transform-gpu md:-translate-x lg:-translate-x-1/4 xl:-translate-x-1/5">
             <Scene  /> {/* Ajusta el margen izquierdo de la escena según sea necesario */}
         </div>
 
-        <div className='bg-blue-200 info' style={{ position: "fixed", bottom: 250, right: 0, zIndex: 2 }}>
+        <div className='bg-blue-200 info' style={{ position: "absolute", bottom: 250, right: 0, zIndex: 2 }}>
           {/* Conditional rendering to toggle between titles */}
           {!showMessage ? (
             <h1 className="main-title text-xl md:text-4xl lg:text-4xl xl:text-7xl">ORBIS GEOSCRIPTING | ACADEMIA</h1>
