@@ -51,7 +51,7 @@ body {
 
 .world2 {
   /*background-color: red;*/
-  height: 100vh;
+  height: auto;
   width: 100%;
   z-index: 100;
 }
